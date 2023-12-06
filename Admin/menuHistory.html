@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin | Tambah User</title>
+    <title>Admin | History</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
         integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
     <style>
@@ -17,26 +17,15 @@
             box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
             z-index: 99;
         }
-        .w-700px {
-            width: 700px;
-        }
+
         .font-weight-semibold {
             font-weight: 600 !important;
-        }
-        
-        @media screen and (max-width: 992px) {
-            .w-700px {
-                width: 500px;
-            }
         }
 
         @media (max-width: 768px) {
             .sidebar {
                 top: 11.5rem;
                 padding: 0;
-            }
-            .w-700px {
-                width: 300px;
             }
         }
 
@@ -197,6 +186,14 @@
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                     <li><a class="dropdown-item" href="#">
+                                        <svg width="20" height="20" viewBox="0 0 53 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.96875 43C10.1937 41.7088 15.9309 35.7667 17.6122 35.7667H35.3889C37.8252 35.7667 42.7987 40.6922 44.0312 42.4285M52 25C52 38.2548 40.5833 49 26.5 49C12.4167 49 1 38.2548 1 25C1 11.7452 12.4167 1 26.5 1C40.5833 1 52 11.7452 52 25ZM35.6344 16.8199C35.6344 12.2411 31.5275 8.5 26.5008 8.5C21.4741 8.5 17.3671 12.2411 17.3671 16.8199C17.3671 21.3987 21.4741 25.1398 26.5008 25.1398C31.5274 25.1398 35.6344 21.3987 35.6344 16.8199Z" stroke="black" stroke-width="2"/>
+                                        </svg>
+                                            <span>Admin</span>                                     
+                                    </a></li>
+                                    
+                                    
+                                    <li><a class="dropdown-item" href="#">
                                             <svg width="20" height="20" viewBox="0 0 37 40" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
@@ -224,53 +221,118 @@
                             </div>
                         </div>
                     </div>
-                    <div class="mb-4 mb-lg-0 d-flex justify-content-center align-content-center">
-                        <div class="card border-0"
-                            style="background-color: #00000000;">
-                            <div class="card-body w-700px">
-                                <div class="mb-3">
-                                    <h1 class="text-center font-weight-bold">TAMBAH USER</h1>
+                    <div class="mb-4 mb-lg-0">
+                        <div class="card"
+                            style="background-color: #FAF3F3; box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);">
+                            <div class="card-body">
+                                <div class="row mb-3">
+                                    <div class="col-md-6 d-flex justify-content-md-start justify-content-center">
+                                        <h1 class="h2">History</h1>
+                                    </div>
+                                    
                                 </div>
-                                <form>
-                                    <div class="mb-3">
-                                        <input type="text" class="form-control" id="nik" placeholder="NIK"
-                                            style="background-color: #D9D9D9;">
-                                    </div>
-                                    <div class="mb-3">
-                                        <input type="text" class="form-control" id="nama" placeholder="Nama"
-                                            style="background-color: #D9D9D9;">
-                                    </div>
-                                    <div class="mb-3">
-                                        <input type="text" class="form-control" id="alamat" placeholder="Alamat"
-                                            style="background-color: #D9D9D9;">
-                                    </div>
-                                    <div class="mb-3">
-                                        <input type="text" class="form-control" id="no-telepon" placeholder="No Telepon"
-                                            style="background-color: #D9D9D9;">
-                                    </div>
-                                    <div class="mb-3">
-                                        <select class="form-select" id="floatingSelect" style="background-color: #D9D9D9;">
-                                            <option selected style="background-color: white;" value="">Pilih Jenis Kelamin</option>
-                                            <option value="laki-laki" style="background-color: white;">Laki-Laki</option>
-                                            <option value="perempuan" style="background-color: white;">Perempuan</option>
+                                <div class="row mb-2">
+                                    <div class="col-lg-6 d-flex justify-content-lg-start justify-content-center">
+                                        <p>Show</p>
+                                        <select class="form-select form-select-sm mx-2" style="width: 55px;">
+                                            <option selected value="10">10</option>
+                                            <option value="20">20</option>
+                                            <option value="30">30</option>
+                                            <option value="30">40</option>
+                                            <option value="30">50</option>
                                         </select>
+                                        <p>Entries</p>
                                     </div>
-                                    <div class="mb-4">
-                                        <select class="form-select" id="floatingSelect" style="background-color: #D9D9D9;">
-                                            <option selected style="background-color: white;" value="">Pilih Role</option>
-                                            <option value="laki-laki" style="background-color: white;">Employee</option>
-                                            <option value="perempuan" style="background-color: white;">Admin</option>
-                                        </select>
+                                    <div class="col-lg-6 d-lg-flex justify-content-lg-end justify-content-center">
+                                        <div class="d-flex justify-content-center">
+                                            <p class="mr-2">Search :</p>
+                                            
+                                        </div>
+                                        <div class="d-flex justify-content-center justify-content-lg-end">
+                                            <input type="text" style="height: 30px;">
+                                        </div>
                                     </div>
-                                    <div class="d-flex justify-content-md-end justify-content-center">
-                                        <a href="/" type="login" class="btn px-3 text-white h-5 font-weight-semibold mr-2 rounded-pill" style="background-color: #1284ED;"
-                                            onmouseover="this.style.backgroundColor='#075095'"
-                                            onmouseout="this.style.backgroundColor='#1284ED'">Simpan</a>
-                                        <a href="/Admin/menuUsers.html" type="login" class="btn px-4 text-white h-5 font-weight-semibold ml-2 rounded-pill" style="background-color: #ED1212E5;"
-                                            onmouseover="this.style.backgroundColor='#9E0202E5'"
-                                            onmouseout="this.style.backgroundColor='#ED1212E5'">Batal</a>
-                                    </div>
-                                </form>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table text-center">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">No.</th>
+                                                <th scope="col">Nama</th>
+                                                <th scope="col">No Telepon</th>
+                                                <th scope="col">Pinjam</th>
+                                                <th scope="col">Tanggal Peminjaman</th>
+                                                <th scope="col">Tanggal Pengembalian</th>
+                                                <th scope="col">Kondisi</th>
+                                                <th scope="col">Catatan</th>
+                                    
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>Imam Mutaqin</td>
+                                                <td>083746733647</td>
+                                                <td>Obeng</td>
+                                                <td>20/12/2023 - 25/12/2023</td>
+                                                <td>25/12/2023</td>
+                                                <td><span class="mr-1">Aman</span><svg width="25" height="25" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M18.4243 9.50738C18.4243 14.7582 14.2999 19.0148 9.21216 19.0148C4.12441 19.0148 0 14.7582 0 9.50738C0 4.25659 4.12441 0 9.21216 0C14.2999 0 18.4243 4.25659 18.4243 9.50738ZM8.14659 14.5415L14.9814 7.4876C15.2135 7.24807 15.2135 6.85969 14.9814 6.62017L14.1409 5.75273C13.9088 5.51317 13.5325 5.51317 13.3004 5.75273L7.72633 11.5054L5.12393 8.81959C4.89184 8.58007 4.51552 8.58007 4.28339 8.81959L3.4429 9.68703C3.21081 9.92655 3.21081 10.3149 3.4429 10.5545L7.30606 14.5414C7.53818 14.781 7.91447 14.781 8.14659 14.5415Z" fill="#30E22C"/>
+                                                </svg> </td>
+
+                                                <td><a href="#"><svg width="25" height="25" viewBox="0 0 27 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M13.4333 0C5 0 0 10 0 10C0 10 5 20 13.4333 20C21.6667 20 26.6667 10 26.6667 10C26.6667 10 21.6667 0 13.4333 0ZM13.3333 3.33333C17.0333 3.33333 20 6.33333 20 10C20 13.7 17.0333 16.6667 13.3333 16.6667C9.66667 16.6667 6.66667 13.7 6.66667 10C6.66667 6.33333 9.66667 3.33333 13.3333 3.33333ZM13.3333 6.66667C11.5 6.66667 10 8.16667 10 10C10 11.8333 11.5 13.3333 13.3333 13.3333C15.1667 13.3333 16.6667 11.8333 16.6667 10C16.6667 9.66667 16.5333 9.36667 16.4667 9.06667C16.2 9.6 15.6667 10 15 10C14.0667 10 13.3333 9.26667 13.3333 8.33333C13.3333 7.66667 13.7333 7.13333 14.2667 6.86667C13.9667 6.76667 13.6667 6.66667 13.3333 6.66667Z" fill="black"/>
+                                                </svg></a></td>
+                                                
+                                            </tr>
+
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>Lazuardi</td>
+                                                <td>083746733647</td>
+                                                <td>Bor</td>
+                                                <td>20/12/2023 - 25/12/2023</td>
+                                                <td>25/12/2023</td>
+                                                <td><span class="mr-1">Rusak</span><svg width="25" height="25" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M3.10154 0.25V1.42188H10.5862L11.2371 0.25H3.10154ZM3.25017 2.125C3.41849 2.55074 3.04111 3.28609 2.88783 3.63234C2.45791 4.5973 1.76564 5.88242 1.24642 7.36008C0.72728 8.83773 0.378765 10.5189 0.654624 12.2866C0.930523 14.0543 1.83892 15.8943 3.76244 17.6575L3.86326 17.75H14.1367L14.2375 17.6575C16.161 15.8943 17.0694 14.0543 17.3453 12.2866C17.6212 10.5189 17.2727 8.83773 16.7535 7.36004C16.2344 5.88242 15.542 4.5973 15.1121 3.6323C14.9373 3.23988 14.8097 2.89984 14.7483 2.64121L11.8141 4.01906L14.2765 5.28059L12.8598 8.34531L15.2786 9.09551L9.28166 14.4928L11.8588 9.95687L9.58537 9.83297L11.45 6.0707L8.59025 5.01531L10.1957 2.125H3.25017Z" fill="#D0AF01"/>
+                                                </svg> </td>
+
+                                                <td><a href="#"><svg width="25" height="25" viewBox="0 0 27 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M13.4333 0C5 0 0 10 0 10C0 10 5 20 13.4333 20C21.6667 20 26.6667 10 26.6667 10C26.6667 10 21.6667 0 13.4333 0ZM13.3333 3.33333C17.0333 3.33333 20 6.33333 20 10C20 13.7 17.0333 16.6667 13.3333 16.6667C9.66667 16.6667 6.66667 13.7 6.66667 10C6.66667 6.33333 9.66667 3.33333 13.3333 3.33333ZM13.3333 6.66667C11.5 6.66667 10 8.16667 10 10C10 11.8333 11.5 13.3333 13.3333 13.3333C15.1667 13.3333 16.6667 11.8333 16.6667 10C16.6667 9.66667 16.5333 9.36667 16.4667 9.06667C16.2 9.6 15.6667 10 15 10C14.0667 10 13.3333 9.26667 13.3333 8.33333C13.3333 7.66667 13.7333 7.13333 14.2667 6.86667C13.9667 6.76667 13.6667 6.66667 13.3333 6.66667Z" fill="black"/>
+                                                </svg></a></td>
+                                                
+                                            </tr>
+
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td>Indah</td>
+                                                <td>083746733647</td>
+                                                <td>Gunting</td>
+                                                <td>20/12/2023 - 25/12/2023</td>
+                                                <td>25/12/2023</td>
+                                                <td><span class="mr-1">Hilang</span><svg width="25" height="25" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path xmlns="http://www.w3.org/2000/svg" d="M9 0C4.0275 0 0 4.475 0 10C0 15.525 4.0275 20 9 20C13.9725 20 18 15.525 18 10C18 4.475 13.9725 0 9 0ZM5.625 4.45L9 8.2L12.375 4.45L13.995 6.25L10.62 10L13.995 13.75L12.375 15.55L9 11.8L5.625 15.55L4.005 13.75L7.38 10L4.005 6.25L5.625 4.45Z" fill="#FB0000"/>
+                                                </svg> </td>
+
+                                                <td><a href="#"><svg width="25" height="25" viewBox="0 0 27 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M13.4333 0C5 0 0 10 0 10C0 10 5 20 13.4333 20C21.6667 20 26.6667 10 26.6667 10C26.6667 10 21.6667 0 13.4333 0ZM13.3333 3.33333C17.0333 3.33333 20 6.33333 20 10C20 13.7 17.0333 16.6667 13.3333 16.6667C9.66667 16.6667 6.66667 13.7 6.66667 10C6.66667 6.33333 9.66667 3.33333 13.3333 3.33333ZM13.3333 6.66667C11.5 6.66667 10 8.16667 10 10C10 11.8333 11.5 13.3333 13.3333 13.3333C15.1667 13.3333 16.6667 11.8333 16.6667 10C16.6667 9.66667 16.5333 9.36667 16.4667 9.06667C16.2 9.6 15.6667 10 15 10C14.0667 10 13.3333 9.26667 13.3333 8.33333C13.3333 7.66667 13.7333 7.13333 14.2667 6.86667C13.9667 6.76667 13.6667 6.66667 13.3333 6.66667Z" fill="black"/>
+                                                </svg></a></td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-6 pl-md-4 d-flex justify-content-md-start justify-content-center">
+                                    <p>Show 10 of 20 data</p>
+                                </div>
+                                <div class="col-md-6 d-flex justify-content-md-end justify-content-center pr-md-4">
+                                    <button class="btn btn-sm btn-light font-weight-bold"
+                                        style="box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);">Prev</button>
+                                    <button class="btn btn-sm btn-light font-weight-bold"
+                                        style="box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);">Next</button>
+                                </div>
                             </div>
                         </div>
                     </div>

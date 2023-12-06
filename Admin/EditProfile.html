@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin | Tambah User</title>
+    <title>Edit Profile</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
         integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
     <style>
@@ -197,6 +197,14 @@
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                     <li><a class="dropdown-item" href="#">
+                                        <svg width="20" height="20" viewBox="0 0 53 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.96875 43C10.1937 41.7088 15.9309 35.7667 17.6122 35.7667H35.3889C37.8252 35.7667 42.7987 40.6922 44.0312 42.4285M52 25C52 38.2548 40.5833 49 26.5 49C12.4167 49 1 38.2548 1 25C1 11.7452 12.4167 1 26.5 1C40.5833 1 52 11.7452 52 25ZM35.6344 16.8199C35.6344 12.2411 31.5275 8.5 26.5008 8.5C21.4741 8.5 17.3671 12.2411 17.3671 16.8199C17.3671 21.3987 21.4741 25.1398 26.5008 25.1398C31.5274 25.1398 35.6344 21.3987 35.6344 16.8199Z" stroke="black" stroke-width="2"/>
+                                        </svg>
+                                            <span>Admin</span>                                     
+                                    </a></li>
+                                    
+                                    
+                                    <li><a class="dropdown-item" href="#">
                                             <svg width="20" height="20" viewBox="0 0 37 40" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
@@ -228,24 +236,28 @@
                         <div class="card border-0"
                             style="background-color: #00000000;">
                             <div class="card-body w-700px">
+
+                                <div class="d-flex justify-content-center align-items-center mb-2 mb-3">
+                                    <svg width="127" height="90" viewBox="0 0 96 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15.6875 62.25C17.9453 60.3669 28.5197 51.7014 31.6186 51.7014H64.3834C68.8739 51.7014 78.0407 58.8845 80.3125 61.4166M95 36C95 55.33 73.9574 71 48 71C22.0426 71 1 55.33 1 36C1 16.67 22.0426 1 48 1C73.9574 1 95 16.67 95 36ZM64.836 24.0707C64.836 17.3933 57.2664 11.9375 48.0014 11.9375C38.7367 11.9375 31.1668 17.3933 31.1668 24.0707C31.1668 30.7481 38.7367 36.2039 48.0014 36.2039C57.2662 36.2039 64.836 30.7481 64.836 24.0707Z" stroke="black" stroke-width="2" />
+                                    </svg>
+                                </div>
+                                
+
                                 <div class="mb-3">
-                                    <h1 class="text-center font-weight-bold">TAMBAH USER</h1>
+                                    <h1 class="text-center font-weight-bold">Edit Profile</h1>
                                 </div>
                                 <form>
                                     <div class="mb-3">
-                                        <input type="text" class="form-control" id="nik" placeholder="NIK"
+                                        <input type="text" class="form-control" id="nik" placeholder="Nama"
                                             style="background-color: #D9D9D9;">
                                     </div>
                                     <div class="mb-3">
-                                        <input type="text" class="form-control" id="nama" placeholder="Nama"
+                                        <input type="text" class="form-control" id="nama" placeholder="Alamat"
                                             style="background-color: #D9D9D9;">
                                     </div>
                                     <div class="mb-3">
-                                        <input type="text" class="form-control" id="alamat" placeholder="Alamat"
-                                            style="background-color: #D9D9D9;">
-                                    </div>
-                                    <div class="mb-3">
-                                        <input type="text" class="form-control" id="no-telepon" placeholder="No Telepon"
+                                        <input type="text" class="form-control" id="alamat" placeholder="No Telepon"
                                             style="background-color: #D9D9D9;">
                                     </div>
                                     <div class="mb-3">
@@ -255,15 +267,17 @@
                                             <option value="perempuan" style="background-color: white;">Perempuan</option>
                                         </select>
                                     </div>
-                                    <div class="mb-4">
-                                        <select class="form-select" id="floatingSelect" style="background-color: #D9D9D9;">
-                                            <option selected style="background-color: white;" value="">Pilih Role</option>
-                                            <option value="laki-laki" style="background-color: white;">Employee</option>
-                                            <option value="perempuan" style="background-color: white;">Admin</option>
-                                        </select>
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control" id="alamat" placeholder="Umur"
+                                            style="background-color: #D9D9D9;">
                                     </div>
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control" id="alamat" placeholder="NIK"
+                                            style="background-color: #D9D9D9;">
+                                    </div>
+
                                     <div class="d-flex justify-content-md-end justify-content-center">
-                                        <a href="/" type="login" class="btn px-3 text-white h-5 font-weight-semibold mr-2 rounded-pill" style="background-color: #1284ED;"
+                                        <a href="" type="login" class="btn px-3 text-white h-5 font-weight-semibold mr-2 rounded-pill" style="background-color: #1284ED;"
                                             onmouseover="this.style.backgroundColor='#075095'"
                                             onmouseout="this.style.backgroundColor='#1284ED'">Simpan</a>
                                         <a href="/Admin/menuUsers.html" type="login" class="btn px-4 text-white h-5 font-weight-semibold ml-2 rounded-pill" style="background-color: #ED1212E5;"
